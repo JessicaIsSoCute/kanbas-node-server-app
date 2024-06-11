@@ -8,7 +8,7 @@ import cors from "cors"
 import ModuleRoutes from './Kanbas/Modules/routes.js'
 import AssignmentRoutes from './Kanbas/Assignments/routes.js'
 import UserRoutes from './Users/routes.js';
-const CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING || "mongodb://localhost:27017/kanbas"
+const CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING || "mongodb+srv://nodejs:5Ymh6sdkkS2IeSjP@kanbas.awy8zpv.mongodb.net/?retryWrites=true&w=majority&appName=Kanbas"
 mongoose.connect(CONNECTION_STRING);
 const app = express()
 app.use(cors())
